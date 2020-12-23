@@ -25,7 +25,7 @@ const Header: React.FC = () => {
 
   return (
     <AppBar position="static">
-      <Toolbar>
+      <Toolbar color="inherit">
         <Typography variant="h6" className={classes.title}>
           React app
         </Typography>
