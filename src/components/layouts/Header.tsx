@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 //material ui
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
@@ -22,6 +24,9 @@ const useStyles = makeStyles((theme: Theme) =>
 
 const Header: React.FC = () => {
   const classes = useStyles();
+  const linkStyle = {
+    color: "white"
+  };
 
   return (
     <AppBar position="static">
@@ -29,7 +34,10 @@ const Header: React.FC = () => {
         <Typography variant="h6" className={classes.title}>
           React app
         </Typography>
-        <Button color="inherit">Login</Button>
+        <Button color="inherit"></Button>
+        <Link to="/login" style={linkStyle}>
+          Login
+        </Link>
         <Button color="inherit">test</Button>
       </Toolbar>
     </AppBar>
