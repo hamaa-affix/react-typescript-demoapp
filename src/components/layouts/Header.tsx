@@ -38,6 +38,9 @@ const Header: React.FC = () => {
         <Link to="/login" style={linkStyle}>
           Login
         </Link>
+        <Link to="/" style={linkStyle}>
+          home
+        </Link>
         <Button color="inherit">test</Button>
       </Toolbar>
     </AppBar>
