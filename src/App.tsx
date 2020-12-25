@@ -1,4 +1,7 @@
-import * as React from "react";
+import React, { useEffect } from "react";
+//firebase
+import { auth } from "./moduels/firebase";
+//rotuer
 import { Route, BrowserRouter, Switch } from "react-router-dom";
 import "./styles.css";
 //conmpornets
@@ -10,7 +13,12 @@ import Public from "./router/Public";
 //material ui
 import Container from "@material-ui/core/Container";
 
-const App: React.FC = () => {
+const App: React.FC = (props: any) => {
+  // useEffect(() => {
+  //   auth.onAuthStateChanged((user) => {
+  //     user && props.history("/login");
+  //   });
+  // }, [props.history]);
   return (
     <BrowserRouter>
       <>

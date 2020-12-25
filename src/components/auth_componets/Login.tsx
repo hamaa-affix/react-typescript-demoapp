@@ -15,8 +15,8 @@ const Login: React.FC = () => {
         <Grid container justify="center" alignItems="center">
           <Grid item>
             <form>
-              <Typography component="h1" variant="h5">
-                Sign in
+              <Typography component="h1" variant="h5" align="center">
+                Login
               </Typography>
               <FormControl>
                 <InputLabel htmlFor="component-simple">Name</InputLabel>
